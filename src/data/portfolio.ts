@@ -1,5 +1,6 @@
 export const profile = {
   name: 'Sai Sithu Phyo',
+  avatar: '/src/assets/Profile-Photo.JPG',
   title: 'Software Engineer & Web Developer',
   location: 'Chiang Rai, Thailand',
   address: 'Fa-thi soi-8',

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { profile } from '@/data/portfolio'
+import profileAvatar from '@/assets/logo.svg'
 </script>
 
 <template>
@@ -22,7 +23,7 @@ import { profile } from '@/data/portfolio'
           class="about-card glass-card"
         >
           <div class="avatar">
-            <span>{{ profile.name.split(' ').map((n) => n[0]).join('') }}</span>
+            <img :src="profile.avatar || profileAvatar" :alt="profile.name" />
           </div>
           <h3>{{ profile.name }}</h3>
           <p class="subtitle">{{ profile.title }}</p>
@@ -81,14 +82,21 @@ import { profile } from '@/data/portfolio'
   height: 100px;
   margin: 0 auto 1.25rem;
   border-radius: 50%;
-  background: var(--gradient-hero);
+  background: var(--color-bg-elevated);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
+  overflow: hidden;
   box-shadow: 0 8px 32px rgba(239, 131, 84, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.avatar img {
+  width: 108%;
+  height: 128%;
+  object-fit: cover;
+  object-position: center 32%;
+  display: block;
 }
 
 .about-card h3 {
