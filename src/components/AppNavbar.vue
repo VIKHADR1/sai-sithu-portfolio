@@ -44,10 +44,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
       <ul class="nav-links" :class="{ open: mobileOpen }">
         <li v-for="link in navLinks" :key="link.id">
-          <button
-            :class="{ active: activeSection === link.id }"
-            @click="scrollTo(link.id)"
-          >
+          <button :class="{ active: activeSection === link.id }" @click="scrollTo(link.id)">
             {{ link.label }}
           </button>
         </li>
@@ -64,11 +61,14 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   right: 0;
   z-index: 100;
   height: var(--nav-height);
-  transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+  transition:
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease;
 }
 
 .navbar.scrolled {
-  background: rgba(7, 11, 20, 0.85);
+  background: rgba(41, 49, 68, 0.85);
   backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 var(--color-border);
 }
@@ -109,7 +109,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   padding: 0.5rem 0.85rem;
   border-radius: 999px;
   cursor: pointer;
-  transition: color 0.25s ease, background 0.25s ease;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
 }
 
 .nav-links button:hover,
@@ -133,7 +135,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
   width: 24px;
   height: 2px;
   background: var(--color-text);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .menu-toggle span:nth-child(1).open {
@@ -166,7 +170,9 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.35s ease, opacity 0.35s ease;
+    transition:
+      transform 0.35s ease,
+      opacity 0.35s ease;
   }
 
   .nav-links.open {
