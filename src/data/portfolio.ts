@@ -1,6 +1,8 @@
+import profilePhoto from '@/assets/Profile-Photo.JPG'
+
 export const profile = {
   name: 'Sai Sithu Phyo',
-  avatar: '/src/assets/Profile-Photo.JPG',
+  avatar: profilePhoto,
   title: 'Software Engineer & Web Developer',
   location: 'Chiang Rai, Thailand',
   address: 'Fa-thi soi-8',

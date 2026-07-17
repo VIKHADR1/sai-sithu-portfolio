@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { profile } from '@/data/portfolio'
-import profileAvatar from '@/assets/logo.svg'
+import profileAvatar from '@/assets/Profile-Photo.JPG'
 </script>
 
 <template>
