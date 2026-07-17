@@ -45,7 +45,7 @@ import { projects } from '@/data/portfolio'
 .glow {
   width: 600px;
   height: 600px;
-  background: #a855f7;
+  background: rgba(239, 131, 84, 0.18);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

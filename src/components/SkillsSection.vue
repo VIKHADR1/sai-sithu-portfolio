@@ -87,15 +87,15 @@ const categories = [
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
   color: var(--color-text);
-  background: rgba(99, 102, 241, 0.08);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(239, 131, 84, 0.08);
+  border: 1px solid rgba(239, 131, 84, 0.2);
   border-radius: var(--radius-lg);
   transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 .skill-tag:hover {
-  background: rgba(99, 102, 241, 0.15);
-  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(239, 131, 84, 0.15);
+  border-color: rgba(239, 131, 84, 0.4);
   transform: translateY(-2px);
 }
 </style>

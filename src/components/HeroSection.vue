@@ -119,7 +119,7 @@ onMounted(() => {
 .glow-1 {
   width: 500px;
   height: 500px;
-  background: #6366f1;
+  background: rgba(239, 131, 84, 0.18);
   top: -100px;
   right: -100px;
   animation: float 8s ease-in-out infinite;
@@ -128,7 +128,7 @@ onMounted(() => {
 .glow-2 {
   width: 400px;
   height: 400px;
-  background: #22d3ee;
+  background: rgba(27, 38, 59, 0.24);
   bottom: 0;
   left: -100px;
   animation: float 10s ease-in-out infinite reverse;
@@ -157,7 +157,7 @@ onMounted(() => {
   font-size: 0.85rem;
   color: var(--color-accent);
   background: var(--color-accent-soft);
-  border: 1px solid rgba(34, 211, 238, 0.25);
+  border: 1px solid rgba(95, 127, 163, 0.25);
   border-radius: 999px;
   margin-bottom: 1.5rem;
 }
@@ -165,7 +165,7 @@ onMounted(() => {
 .pulse {
   width: 8px;
   height: 8px;
-  background: #22d3ee;
+  background: var(--color-accent);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -191,10 +191,7 @@ onMounted(() => {
 }
 
 .gradient-text {
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text);
 }
 
 .hero-role {
@@ -242,7 +239,7 @@ onMounted(() => {
 .scroll-line {
   width: 1px;
   height: 48px;
-  background: linear-gradient(to bottom, var(--color-accent), transparent);
+  background: var(--color-accent);
   animation: scrollDown 2s ease-in-out infinite;
 }
 

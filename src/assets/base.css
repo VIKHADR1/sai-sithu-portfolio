@@ -1,17 +1,17 @@
 :root {
-  --color-bg: #070b14;
-  --color-bg-elevated: #0f1629;
-  --color-bg-card: rgba(15, 22, 41, 0.72);
-  --color-border: rgba(148, 163, 184, 0.12);
-  --color-text: #e2e8f0;
-  --color-text-muted: #94a3b8;
-  --color-primary: #6366f1;
-  --color-primary-light: #818cf8;
-  --color-accent: #22d3ee;
-  --color-accent-soft: rgba(34, 211, 238, 0.15);
-  --gradient-hero: linear-gradient(135deg, #6366f1 0%, #22d3ee 50%, #a855f7 100%);
-  --gradient-text: linear-gradient(135deg, #818cf8, #22d3ee);
-  --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.15);
+  --color-bg: #2d3142ff;
+  --color-bg-elevated: #4f5d75ff;
+  --color-bg-card: rgba(45, 49, 66, 0.84);
+  --color-border: rgba(191, 192, 192, 0.22);
+  --color-text: #ffffffff;
+  --color-text-muted: #bfc0c0ff;
+  --color-primary: #8295b4;
+  --color-primary-light: #77839b;
+  --color-accent: #ef8354ff;
+  --color-accent-soft: rgba(244, 98, 36, 0.16);
+  --gradient-hero: #4f5d75ff;
+  --gradient-text: #ef8354ff;
+  --shadow-glow: 0 12px 40px rgba(0, 0, 0, 0.25);
   --radius-lg: 16px;
   --radius-xl: 24px;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -46,8 +46,8 @@ body {
 }
 
 ::selection {
-  background: rgba(99, 102, 241, 0.35);
-  color: #fff;
+  background: rgba(239, 131, 84, 0.24);
+  color: var(--color-text);
 }
 
 ::-webkit-scrollbar {
@@ -59,10 +59,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(99, 102, 241, 0.4);
+  background: rgba(191, 192, 192, 0.32);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(99, 102, 241, 0.6);
+  background: rgba(191, 192, 192, 0.45);
 }

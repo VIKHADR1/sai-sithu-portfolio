@@ -102,7 +102,7 @@ import { experience } from '@/data/portfolio'
   color: var(--color-text-muted);
   white-space: nowrap;
   padding: 0.35rem 0.75rem;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(239, 131, 84, 0.1);
   border-radius: 999px;
 }
 

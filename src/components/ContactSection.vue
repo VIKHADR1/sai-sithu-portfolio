@@ -78,7 +78,7 @@ import { profile } from '@/data/portfolio'
 .glow {
   width: 500px;
   height: 500px;
-  background: #6366f1;
+  background: var(--color-primary);
   bottom: -200px;
   right: -100px;
   opacity: 0.25;
@@ -108,25 +108,28 @@ import { profile } from '@/data/portfolio'
 
 .contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1.25rem;
-  background: rgba(99, 102, 241, 0.06);
+  background: rgba(239, 131, 84, 0.08);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   text-decoration: none;
   color: inherit;
   transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  min-width: 0;
 }
 
 .contact-item:hover {
-  border-color: rgba(99, 102, 241, 0.35);
-  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(239, 131, 84, 0.35);
+  background: rgba(239, 131, 84, 0.12);
   transform: translateY(-2px);
 }
 
 .contact-icon {
   font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
 .contact-label {
@@ -139,8 +142,12 @@ import { profile } from '@/data/portfolio'
 }
 
 .contact-value {
+  display: block;
   font-size: 0.9rem;
   color: var(--color-text);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .contact-btn {

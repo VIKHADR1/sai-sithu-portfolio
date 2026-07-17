@@ -88,7 +88,7 @@ import { profile } from '@/data/portfolio'
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 32px rgba(239, 131, 84, 0.28);
 }
 
 .about-card h3 {

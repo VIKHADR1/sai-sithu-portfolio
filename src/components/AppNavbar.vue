@@ -115,7 +115,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 .nav-links button:hover,
 .nav-links button.active {
   color: #f8fafc;
-  background: rgba(99, 102, 241, 0.12);
+  background: rgba(239, 131, 84, 0.12);
 }
 
 .menu-toggle {
