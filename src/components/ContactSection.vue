@@ -111,18 +111,21 @@ import { profile } from '@/data/portfolio'
   align-items: flex-start;
   gap: 1rem;
   padding: 1.25rem;
-  background: rgba(239, 131, 84, 0.08);
+  background: rgba(114, 143, 225, 0.08);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
   min-width: 0;
 }
 
 .contact-item:hover {
-  border-color: rgba(239, 131, 84, 0.35);
-  background: rgba(239, 131, 84, 0.12);
+  border-color: rgba(153, 159, 225, 0.35);
+  background: rgba(35, 47, 80, 0.12);
   transform: translateY(-2px);
 }
 
